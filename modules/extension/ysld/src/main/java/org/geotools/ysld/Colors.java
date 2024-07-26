@@ -170,10 +170,16 @@ public class Colors {
         colorMap.put("white", color(255, 255, 255));
         colorMap.put("whitesmoke", color(245, 245, 245));
         colorMap.put("yellow", color(255, 255, 0));
+        colorMap.put("transparent", color(0, 0, 0, 0));
+        colorMap.put("transparent-test", color(255, 0, 0, 128));
     }
 
     static Color color(int r, int g, int b) {
         return new Color(r, g, b);
+    }
+
+    static Color color(int r, int g, int b, int a) {
+        return new Color(r, g, b, a);
     }
 
     /** Returns the color for the specified name, or <code>null</code> if no such color exists. */
